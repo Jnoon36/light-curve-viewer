@@ -14,6 +14,7 @@
     "allowJs": true,
     "outDir": ".erb/dll",
     "types": ["vitest/globals"],
+    "skipLibCheck": true
   },
   "exclude": ["test", "release/build", "release/app/dist", ".erb/dll"]
 }
