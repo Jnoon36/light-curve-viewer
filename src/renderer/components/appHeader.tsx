@@ -10,7 +10,7 @@ const CustomAppBar = styled(AppBar)(({ theme }) => ({
 
 function AppHeader() {
   return (
-    <CustomAppBar>
+    <CustomAppBar data-testid="custom-app-bar">
       <Toolbar>
         <Stack
           direction="row"
