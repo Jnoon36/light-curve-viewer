@@ -1,28 +1,28 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, Box } from '@mui/material';
+import { AppBar, Toolbar, Typography, Stack } from '@mui/material';
 import icon from '../../../assets/icon.svg';
 
 function AppHeader() {
   return (
-    <AppBar position="fixed">
+    <AppBar position="fixed" sx={{ background: 'rgb(80, 80, 80)' }}>
       <Toolbar>
-        <Box
-          display="flex"
-          flexDirection="row"
+        <Stack
+          direction="row"
+          spacing={2}
           justifyContent="flex-start"
           alignItems="center"
         >
           <img
             src={icon}
             alt="icon"
-            width="30"
-            height="30"
+            width="50"
+            height="50"
             style={{ marginRight: '10px' }}
           />
           <Typography variant="h6" noWrap>
             Light Curve Viewer
           </Typography>
-        </Box>
+        </Stack>
       </Toolbar>
     </AppBar>
   );
